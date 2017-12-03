@@ -3,6 +3,23 @@
     width: 100%;
     background-color: $color-primary-2;
 }
+
+
+.flex-container{
+    display:flex;
+    flex-direction:row;
+    margin:0 auto;
+    width:1200px;
+    height:auto;
+
+}
+.flex-block{
+    width:33%;
+    box-sizing:border-box;
+    border:1px solid #413434;
+}
+
+
 h2.heading {
     width: 100%;
     text-align: center;

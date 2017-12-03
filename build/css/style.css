@@ -53,12 +53,14 @@
 
 .h-menu .menu {
   font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
   display: flex; }
   .h-menu .menu__item {
     list-style: none;
+    text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 2em;
+    padding: 1em;
     margin: 0em 0;
     border-right: 1px solid #fff; }
     .h-menu .menu__item:last-child {
@@ -66,7 +68,7 @@
     .h-menu .menu__item a {
       text-decoration: none;
       color: #fff;
-      padding: 15px 2em;
+      padding: 15px 1em;
       text-transform: uppercase; }
       .h-menu .menu__item a:hover {
         color: #052577; }
@@ -77,7 +79,8 @@
   background-size: cover;
   box-sizing: border-box;
   text-transform: uppercase;
-  text-shadow: 4px 4px 2px #333; }
+  text-shadow: 4px 4px 2px #333;
+  text-align: center; }
 
 .main__heading {
   width: 100%;
@@ -96,6 +99,18 @@
   height: 100vh;
   width: 100%;
   background-color: #325FCF; }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 1200px;
+  height: auto; }
+
+.flex-block {
+  width: 33%;
+  box-sizing: border-box;
+  border: 1px solid #413434; }
 
 h2.heading {
   width: 100%;

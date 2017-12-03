@@ -11,13 +11,15 @@
 .h-menu {
     .menu { 
         font-family: $font-menu;
+        font-size:1.8rem;
         display: flex;
         &__item {
             list-style: none;
+            text-align:center;
            
             flex-direction:row;
             flex-wrap:wrap;
-            padding: 2em;
+            padding: 1em;
             margin: 0em 0;
             border-right: 1px solid #fff;
             &:last-child{
@@ -26,7 +28,7 @@
             a {
                 text-decoration: none;
                 color: #fff;
-                padding: 15px 2em;
+                padding: 15px 1em;
                 text-transform:uppercase;
                 
 
@@ -44,6 +46,7 @@
     box-sizing: border-box;
     text-transform: uppercase;
     text-shadow: 4px 4px 2px #333;
+    text-align:center;
 }
 .main__heading{
     width:100%;
