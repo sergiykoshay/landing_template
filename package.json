@@ -1,5 +1,5 @@
 {
-  "name": "photomaria",
+  "name": "folio_1",
   "version": "1.0.0",
   "description": "landing page for portfolio",
   "main": "index.js",
@@ -25,6 +25,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Sergiy Koshay",
   "license": "ISC"
 }

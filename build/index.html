@@ -1,54 +1,81 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <title>started project</title>
+    <title>Portfolio for me 1</title>
     <link rel="stylesheet" href="css/reset.css">
     <script src="https://use.fontawesome.com/a0dc5e0abe.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="js/eskju.jquery.scrollflow.min.js"></script>
+    <script src="js/slider.js"></script>
   </head>
   <body>
-    <div class="header">  
-      <div class="logo-box">
-        <div class="logo"><img class="logo__img" src="images/logo.png" alt="logo"></div>
-      </div>
-      <div class="h-menu">
+    <div class="header">
+      <div class="background-1"></div>
+      <div class="background-2"></div>
+      <nav class="h-menu"><a class="logo" href="#"><span class="fat">your</span><span class="thin">logo</span></a>
         <ul class="menu">
-          <li class="menu__item"><a href="#">main</a></li>
-          <li class="menu__item"><a href="#">about me</a></li>
-          <li class="menu__item"><a href="#">my dreams</a></li>
-          <li class="menu__item"><a href="#">my jobs</a></li>
-          <li class="menu__item"><a href="#">how me find</a></li>
+          <li class="menu__item"><a href="#">home</a></li>
+          <li class="menu__item"><a href="#">service</a></li>
+          <li class="menu__item"><a href="#">works</a></li>
+          <li class="menu__item"><a href="#">team</a></li>
+          <li class="menu__item"><a href="#">contact</a></li>
         </ul>
-      </div>
-      <h1 class="main__heading">речі які потрібно знати обовязково всім!!! </h1>
-      <button class="btn"><span>Дізнатися більше</span></button>
+      </nav>
+      <h1 class="main__heading">We are digital agency </h1>
+      <button class="btn"><span>see portfolio</span></button>
+      <ul class="dots">
+        <li class="dot dot__active"></li>
+        <li class="dot"></li>
+        <li class="dot"></li>
+      </ul>
     </div>
     <div class="main"></div>
-    <div class="section">
-      <h2 class="heading scrollflow -slide-left -opacity">Новий тест тізер!!!!</h2>
-      <h3 class="sub-heading">Про що ви маєте дізнатися від мене?</h3>
-    </div>
-    <div class="section">
-      <h2 class="heading scrollflow -slide-top -opacity">Інший текст про щось!!!!</h2>
-      <h3 class="sub-heading">Переваги від мене?</h3>
-      <div class="flex-container">
-        <div class="flex-block">
-          <h4 class="heading">Ціна</h4><i class="fa fa-money" aria-hidden="true"> </i>
+    <div class="section padding-bott">
+      <h2 class="heading">our servise</h2>
+      <p class="sub-heading">lorem ipsum dolor dfderpw,cm dede</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-12 col-lg-3">
+            <h3>development</h3>
+            <p class="slogan-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel elementum augue. In hac habitasse platea dictumst. Sed ullamcorper ante quam, eu fringilla est elementum sit amet. Vestibulum non ligula neque.</p>
+          </div>
+          <div class="col-md-3 col-xs-12 col-lg-3">
+            <h3>design</h3>
+            <p class="slogan-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel elementum augue. In hac habitasse platea dictumst. Sed ullamcorper ante quam, eu fringilla est elementum sit amet. Vestibulum non ligula neque.</p>
+          </div>
+          <div class="col-md-3 col-xs-12 col-lg-3">
+            <h3>seo & analitics</h3>
+            <p class="slogan-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel elementum augue. In hac habitasse platea dictumst. Sed ullamcorper ante quam, eu fringilla est elementum sit amet. Vestibulum non ligula neque.</p>
+          </div>
+          <div class="col-md-3 col-xs-12 col-lg-3">
+            <h3>marketing</h3>
+            <p class="slogan-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel elementum augue. In hac habitasse platea dictumst. Sed ullamcorper ante quam, eu fringilla est elementum sit amet. Vestibulum non ligula neque.</p>
+          </div>
         </div>
-        <div class="flex-block"></div>
-        <div class="flex-block"></div>
+      </div>
+    </div>
+    <div class="section bg-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xs-6 col-lg-6">
+            <h2 class="heading left-align">case study</h2>
+            <p class="sub-heading left-align low-hight">brief story about how this process work</p>
+            <h3 class="left-align"><span class="fat">client</span><span class="thin">logo</span></h3>
+            <p class="sub-heading left-align low-hight">Integer quis pulvinar tellus. Nunc varius hendrerit ex, vitae faucibus sem consectetur in. Aenean elit urna, varius et fringilla sed, iaculis vitae purus. Aliquam risus massa, porta pulvinar placerat vel, hendrerit tincidunt enim. Pellentesque nec vulputate diam, a dignissim lacus. Phasellus pellentesque luctus erat, ut scelerisque ipsum scelerisque in.</p>
+            <button class="btn btn-small"><span>see more</span></button>
+          </div>
+          <div class="col-md-5 col-xs-5 col-lg-5"><img class="notebook-image" alt="notebook" src="images/notebook.png"></div>
+        </div>
       </div>
     </div>
     <div class="section">
-      <h2 class="heading scrollflow -slide-left -opacity">Новий тест тізер!!!!</h2>
-      <h3 class="sub-heading">Про що ви маєте дізнатися від мене?</h3>
+      <div class="flex-heading">
+        <h4 class="active">branding</h4>
+        <h4>web design</h4>
+        <h4>print design</h4>
+      </div>
     </div>
     <div class="footer">
       <div class="copyright">

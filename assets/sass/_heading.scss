@@ -1,60 +1,165 @@
-﻿.logo-box{}
-.logo {
+﻿
+.header-menu-area{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-content: space-between;
+    box-sizing: content-box;
+    height: 50px;
 
-    &__img {
-        width: 60px;
-        height: 60px;
-        float: left;
-        margin: .75em .5em 0;
-    }
+   
 }
-.h-menu {
-    .menu { 
-        font-family: $font-menu;
-        font-size:1.8rem;
-        display: flex;
-        &__item {
-            list-style: none;
-            text-align:center;
-           
-            flex-direction:row;
-            flex-wrap:wrap;
-            padding: 1em;
-            margin: 0em 0;
-            border-right: 1px solid #fff;
-            &:last-child{
-                border:none;
-            }
-            a {
-                text-decoration: none;
-                color: #fff;
-                padding: 15px 1em;
-                text-transform:uppercase;
-                
 
-                &:hover {
-                    color: $color-primary-3;
+.logo {
+    display: block;
+    color: aliceblue;
+    font-size: 2em;
+    font-family: $font-menu;
+    text-decoration: none;
+    float: left;
+}
+span.fat{
+        font-weight:600;
+    }
+span.thin{
+        font-weight:100;
+    }
+
+.h-menu {
+    padding: 20px;
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .menu {
+        list-style: none;
+        font-family: $font-menu;
+        font-size: .75rem;
+        margin:0;
+        padding: 0;
+        float: right;
+        
+        &__item {
+            display: inline-block;
+
+            & a {
+                text-decoration: none;
+                display: block;
+                position: relative;
+                line-height: 61px;
+                padding:0 10px;
+                font-size: 18px;
+                letter-spacing: 2px;
+                font-weight: bold;
+                color: #fff;
+                transition: .3s linear;
+                text-transform: uppercase;
+                border-bottom: 3px solid transparent;
+                &:before{
+                    content: "";
+                    width: 9px;
+                    height: 9px;
+                    background: #ccc;
+                    position: absolute;
+                    left: 50%;
+                    transform: rotate(45deg) translateX(6.5px);
+                    opacity: 0;
+                    transition: .3s;
+                }
+                &:hover{
+                    border-bottom: 3px solid #ffffff;
                 }
             }
         }
     }
 }
+
+@media(max-width: 660px){
+    .menu{
+        float: none;
+        padding-top: 20px;
+
+        & a {
+            padding: 0 10px;
+            width: 100%;
+
+        }
+    }
+    .h-menu{
+        text-align: center;
+        padding: 20px 0 0 0;
+    }
+    .logo{
+        float: none;
+    }
+}
+
+@media (max-width: 600px){
+    .menu{
+        & li{
+            display: block;
+        }
+    }
+}
+
 .header {
-    height: 100vh;
-    background-image: url(../images/slider-img/slide-04.jpg);
-    background-size:cover;
+    height: 100%;
+    background-size: cover;
     box-sizing: border-box;
     text-transform: uppercase;
     text-shadow: 4px 4px 2px #333;
-    text-align:center;
+    text-align: center;
+    overflow: hidden;
+    transition: all 3s ease-in-out;
+    position: relative;
+    background: transparent;
+
+    &--1 {
+        background-image: url(../images/header.png);
+    }
+
+    &--2 {
+        background-image: url(../images/header-1.jpg);
+    }
+
+    &--3 {
+        background-image: url(../images/header-2.jpg);
+    }
 }
+
+.background-1, .background-2 {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 .main__heading{
     width:100%;
     text-align:center;
     font-family:$font-menu;
-    color:$color-primary-3;
-    font-size:4em;
-    padding: 2em 1em 1em;
-    line-height:150%;
+    color:#ffffff;
+    font-weight: 900;
+    font-size: 4em;
+    padding: 1em 0 .1em 0;
+    line-height: 150%;
     
+}
+
+ul.dots{}
+li.dot{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width:1.5em;
+    height: 1.5em;
+    margin: 8em .2em;
+    cursor: pointer;
+    &__active{
+        background-color: #fff;
+    }
 }

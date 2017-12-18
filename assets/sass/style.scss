@@ -1,13 +1,17 @@
 ﻿@import'variable';
 @import'mixin';
+@import'section-head';
 @import'btn';
 @import'heading';
 @import'main';
 @import'section';
 @import'footer';
+@import'grid';
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,900');
 
 body {
-    background-color: #faf1f1;
+    background-color: #ffffff;
+    font-size:16px;
+    font-family:"Raleway";
 }

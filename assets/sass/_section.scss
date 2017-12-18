@@ -1,39 +1,73 @@
 ﻿.section {
-    height: 100vh;
     width: 100%;
-    background-color: $color-primary-2;
 }
-
-
-.flex-container{
-    display:flex;
-    flex-direction:row;
-    margin:0 auto;
-    width:1200px;
-    height:auto;
-
+.padding-bott{
+    padding-bottom:10rem;
 }
-.flex-block{
-    width:33%;
-    box-sizing:border-box;
-    border:1px solid #413434;
-}
-
 
 h2.heading {
     width: 100%;
-    text-align: center;
     font-family: $font-header;
-    font-size: 4rem;
-    color: #cca9a9;
-    padding: 4rem 0;
+    font-weight:900;
+    color: #171616;
+    padding: 12rem 0 .2rem 0;
     text-transform: uppercase;
+    margin-bottom:0;
 }
 
-h3.sub-heading {
+.sub-heading {
     width: 100%;
     text-align: center;
     font-family: $font-header;
     font-size: .8rem;
-    color: #cca9a9;
+    color: #171616;
+    margin-bottom: 10rem;
+    line-height:1.8;
+}
+
+p.slogan-text{
+    color:#515151;
+    text-align:center;
+    padding:0 .6rem 1rem 1rem; 
+    line-height: 1.6;
+}
+
+.left-align{
+    text-align:left;
+}
+
+.bg-grey {
+    background-color: #f3f3f3;
+}
+
+.notebook-image{
+    position:relative;
+    bottom:-35px;
+    right:-18px;
+    overflow:hidden;
+
+}
+
+.low-hight{
+    margin:0;
+    padding:0 0 2rem 0;
+}
+
+.flex-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    & h4 {
+        margin: 4rem 0 0 0;
+        padding: .2rem 2.4rem;
+        font-weight: 400;
+        font-size:1rem;
+
+        &.active {
+            background-color: #e85408;
+            border-radius:25px;
+            color:#fff;
+        }
+    }
 }
