@@ -56,17 +56,6 @@ span.thin{
                 transition: .3s linear;
                 text-transform: uppercase;
                 border-bottom: 3px solid transparent;
-                &:before{
-                    content: "";
-                    width: 9px;
-                    height: 9px;
-                    background: #ccc;
-                    position: absolute;
-                    left: 50%;
-                    transform: rotate(45deg) translateX(6.5px);
-                    opacity: 0;
-                    transition: .3s;
-                }
                 &:hover{
                     border-bottom: 3px solid #ffffff;
                 }
@@ -103,8 +92,10 @@ span.thin{
     }
 }
 
-.header {
-    height: 100%;
+.header { 
+    height: 100vh;
+    
+    background-image: url('../images/header.png');
     background-size: cover;
     box-sizing: border-box;
     text-transform: uppercase;
@@ -113,27 +104,9 @@ span.thin{
     overflow: hidden;
     transition: all 3s ease-in-out;
     position: relative;
-    background: transparent;
-
-    &--1 {
-        background-image: url(../images/header.png);
-    }
-
-    &--2 {
-        background-image: url(../images/header-1.jpg);
-    }
-
-    &--3 {
-        background-image: url(../images/header-2.jpg);
-    }
 }
 
-.background-1, .background-2 {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-}
+
 
 
 

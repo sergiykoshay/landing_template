@@ -1,27 +1,26 @@
 $(document).ready(function () {
-    var bgArr = ["../images/header.png",
-        "../images/header-1.png",
-        "../images/header-2.png"];
+    var bgArray = [
+        'images/header.png',
+        'images/header-1.png',
+        'images/header-2.png'
+    ], i=1;
+function bgChange(){
 
-    var i = 0;
-
-    var $bg1 = $('.background-1').css('background-image', 'url(' + bgArr[0] + ')')
-        .css('left', '0%');
-    var $bg2 = $('.background-2').css('background-image', 'url(' + bgArr[1] + ')')
-        .css('left', '-100%');
-
-    var bgSlide = function ($bg) {
-        $bg.animate({ left: '+=100%' }, 600, function () {
-            if (parseInt($bg.css('left')) > 0) {
-                $bg.css('left', '-100%');
-                (i < bgArr.length - 1) ? i++ : i = 0;
-                $bg.css("background-image", "url(" + bgArr[i] + ")");
-            }
+    if(i > (bgArray.length-1)){
+        $('.header').animate({'opacity':'0'},200,function(){
+            i=1 ;
+            $('.header').css({'background-image':'url('+bgArray[0]+')'});
         });
+        $('.header').animate({'opacity':'1'},200);
+    }else{
+        $('.header').animate({'opacity':'0'},200,function(){
+            $('.header').css({'background-image':'url('+bgArray[i]+')'});
+            i++;
+        });
+        $('.header').animate({'opacity':'1'},200);
     }
+    
+}
+var intervalCsaHead = setInterval(bgChange,8000);
 
-    setInterval(function () {
-        bgSlide($bg1);
-        bgSlide($bg2);
-    }, 2000);
 });
