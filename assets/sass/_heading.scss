@@ -122,17 +122,3 @@ span.thin{
     
 }
 
-ul.dots{}
-li.dot{
-    display: inline-block;
-    box-sizing: border-box;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    width:1.5em;
-    height: 1.5em;
-    margin: 8em .2em;
-    cursor: pointer;
-    &__active{
-        background-color: #fff;
-    }
-}
