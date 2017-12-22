@@ -1,11 +1,12 @@
 ﻿.section {
     width: 100%;
+    padding: 1rem 0 2.4rem 0;
 }
 .padding-bott{
     padding-bottom:10rem;
 }
 
-h2.heading {
+.heading {
     width: 100%;
     font-family: $font-header;
     font-weight:900;
@@ -16,16 +17,15 @@ h2.heading {
 }
 
 .sub-heading {
-    width: 100%;
     text-align: center;
     font-family: $font-header;
     font-size: .8rem;
     color: #171616;
-    margin-bottom: 10rem;
+    margin: 1rem;
     line-height:1.8;
 }
 
-p.slogan-text{
+.slogan-text{
     color:#515151;
     text-align:center;
     padding:0 .6rem 1rem 1rem; 
@@ -68,7 +68,7 @@ and (min-width : 992px){
     padding-bottom: 1em;
 
     & h4 {
-        margin: 4rem 0 0 0;
+        margin: 1rem 2rem;
         padding: .2rem 2.4rem;
         font-weight: 400;
         font-size:1rem;
@@ -87,7 +87,7 @@ and (min-width : 992px){
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0 50px;
+    padding: 0 80px;
     .flex-item{
         background-color: #5c5c5c;
         
@@ -177,4 +177,53 @@ figure{
     height: 160px;
     border-radius: 50%;
     margin: 0 auto 40px auto;
+    &--sm{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+        top: -40px;
+        background-color: #232323;
+        border-radius: 50%;
+
+    }
+}
+
+.section-3{
+    background-color: #404040;
+    padding-bottom: 4em;
+
+}
+
+.respond{
+    &__body{
+        padding: 25px 18%;
+        color: #fff;
+        & p{
+            font-size: 2em;
+            font-family: Roboto;
+            font-weight: 900;
+            
+            letter-spacing: 1px;
+            line-height: 1.5;
+            text-align: center;
+       }
+    }
+    &__client{
+        font-family: Raleway;
+        text-align: center;
+        font-size: 1.4em;
+        color: #fff;
+        &--name{
+            font-weight: 900;
+
+        }
+        &--company{
+            font-weight: 400;
+            &::before{
+                content: " - ";
+            }
+
+        }
+    }
 }

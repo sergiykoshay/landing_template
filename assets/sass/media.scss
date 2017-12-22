@@ -5,15 +5,42 @@ and (max-device-width : 480px) {
     .service-box{
         display:block;
     }
+    form{
+        & *{
+            width: 100%;
+        }
 
-    
+        & input{
+
+            width: 100%;
+        }
+
+        & textarea{
+            width: 100%;
+        }
+
+    }
+
+    .respond__body{
+        padding: 10px;
+    }
+
+    .flex-heading{
+        flex-direction: column;
+        & h4{
+            margin: 1em auto 0;
+        }
+    }
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
 /* Styles */
+    .flex-heading {
+        flex-direction: column;
 
+    }
 }
 
 /* Smartphones (portrait) ----------- */
@@ -21,7 +48,10 @@ and (min-width : 321px) {
 and (max-width : 320px) {
 
 /* Styles */
+    .flex-heading {
+    flex-direction: column;
 
+    }
     .section-1 {
         &__left {
             width: 100%;
@@ -38,7 +68,10 @@ and (max-width : 320px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
+.flex-heading {
+    flex-direction: row;
 
+}
 }
 
 /* iPads (landscape) ----------- */
@@ -61,7 +94,10 @@ and (orientation : portrait) {
 @media only screen 
 and (min-width : 1224px) {
 /* Styles */
+.flex-heading {
+    flex-direction: row;
 
+}
 }
 
 /* Large screens ----------- */
@@ -70,6 +106,10 @@ and (min-width : 1824px) {
   *{
     font-size: 24px;
   }
+  .flex-heading {
+    flex-direction: row;
+
+}
 /* Styles */
 }
 

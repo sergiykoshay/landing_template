@@ -1,15 +1,31 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .service-box {
-    display: block; } }
+    display: block; }
+  form * {
+    width: 100%; }
+  form input {
+    width: 100%; }
+  form textarea {
+    width: 100%; }
+  .respond__body {
+    padding: 10px; }
+  .flex-heading {
+    flex-direction: column; }
+    .flex-heading h4 {
+      margin: 1em auto 0; } }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
-  /* Styles */ }
+  /* Styles */
+  .flex-heading {
+    flex-direction: column; } }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
   /* Styles */
+  .flex-heading {
+    flex-direction: column; }
   .section-1__left {
     width: 100%; }
   .section-1__right {
@@ -17,7 +33,9 @@
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */ }
+  /* Styles */
+  .flex-heading {
+    flex-direction: row; } }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -29,12 +47,16 @@
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
-  /* Styles */ }
+  /* Styles */
+  .flex-heading {
+    flex-direction: row; } }
 
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   * {
     font-size: 24px; }
+  .flex-heading {
+    flex-direction: row; }
   /* Styles */ }
 
 /* iPhone retina ----------- */

@@ -1,0 +1,68 @@
+.contact{
+    
+    padding: 50px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/contact-bg.png");
+    & h2{
+      margin-bottom: 4px;   
+
+    }
+
+    .caption{
+        padding: 0 40px;
+        max-width: 480px;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+}
+
+form{
+    max-width: 660px;
+    margin: 0 auto;
+    & *{
+        margin: 10px 0;
+        width: 100%;
+        background: rgba(127,127,127,.8);
+        border: 1px #333 solid;
+        padding: 0 15px;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 100;
+        font-family: Raleway;
+    }
+
+    & input{
+        height: 50px;
+    }
+
+    & textarea{
+        padding: 20px 15px;
+        height: 220px;
+        resize: none;
+    }
+
+    & button{
+        width: 200px;
+        height: 50px;
+        font-size: 1.5em;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: rgb(255, 255, 255);
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: rgb(255, 255, 255);
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        color: rgb(255, 255, 255);
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        color: rgb(255, 255, 255);
+    }
+}
