@@ -15,16 +15,18 @@
   </head>
   <body>
     <div class="header">
-      <nav class="h-menu"><a class="logo" href="#"><span class="fat">your</span><span class="thin">logo</span></a>
-        <nav role="navtgation"><a href="#"></a>
-          <ul class="menu">
-            <li class="menu__item"><a href="#">home</a></li>
-            <li class="menu__item"><a href="#service">service</a></li>
-            <li class="menu__item"><a href="#work">works</a></li>
-            <li class="menu__item"><a href="#team">team</a></li>
-            <li class="menu__item"><a href="#contact">contact</a></li>
-          </ul>
-        </nav>
+      <input id="burger" type="checkbox">
+      <nav class="mainNav" id="mainNav"><a class="logo logo--position" href="#"><span class="fat">your</span><span class="thin">logo</span></a>
+        <ul class="h-menu" id="js-menu">
+          <li class="menu__item"><a href="#">home</a></li>
+          <li class="menu__item"><a href="#service">service</a></li>
+          <li class="menu__item"><a href="#work">works</a></li>
+          <li class="menu__item"><a href="#team">team</a></li>
+          <li class="menu__item"><a href="#contact">contact</a></li>
+        </ul>
+        <label class="navBars" for="burger">
+          <div class="burger">   </div>
+        </label>
       </nav>
       <h1 class="main__heading">We are digital agency </h1>
       <button class="btn"><span>see portfolio</span></button>
@@ -187,6 +189,7 @@
     </div>
     <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script src="js/menu.js"></script>
     <script>$().fancybox({ selector : '[data-fancybox="images"]', loop: true});</script>
   </body>
 </html>

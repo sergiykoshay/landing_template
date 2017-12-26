@@ -13,11 +13,13 @@
 and (max-width : 768px){
     .footer{
         flex-direction: column;
+        height: auto;
     }
 }
 
 .social-link{
     ul{
+        margin: 1rem;
         li{
             list-style: none;
             display: inline-block;
@@ -30,6 +32,7 @@ and (max-width : 768px){
                 width: 2rem;
                 height: 2rem;
                 padding: .5rem;
+                margin: .1rem .2rem;
                 border-radius: 50%;
             }
         }
