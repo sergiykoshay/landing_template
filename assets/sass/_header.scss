@@ -11,12 +11,16 @@
 }
 
 .logo {
+    text-transform: uppercase;
     display: block;
     color: aliceblue;
     font-size: 2em;
     font-family: $font-menu;
     text-decoration: none;
     float: left;
+    &--gray{
+        color: #4d4c4c;
+    }
 }
 span.fat{
         font-weight:600;

@@ -221,12 +221,15 @@ p {
   height: 50px; }
 
 .logo {
+  text-transform: uppercase;
   display: block;
   color: aliceblue;
   font-size: 2em;
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   float: left; }
+  .logo--gray {
+    color: #4d4c4c; }
 
 span.fat {
   font-weight: 600; }
@@ -549,14 +552,32 @@ form {
     color: white; }
 
 .footer {
-  background-color: #92A8DC;
+  background-color: #262626;
   font-family: "Raleway", sans-serif;
-  padding: 12px 30px; }
-  .footer .copyright:before {
-    color: #010E30;
-    content: "\00A9";
-    float: left;
-    padding: 0 10px; }
+  padding: 1em 3em;
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column; } }
+
+.social-link ul li {
+  list-style: none;
+  display: inline-block; }
+  .social-link ul li a {
+    display: block;
+    box-sizing: border-box;
+    background-color: #4d4c4c;
+    color: #262626;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    padding: .5rem;
+    border-radius: 50%; }
 
 @-ms-viewport {
   width: device-width; }
