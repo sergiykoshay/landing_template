@@ -310,7 +310,7 @@ span.thin {
     user-select: none;
     -webkit-user-select: none; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .mainNav {
     overflow: hidden;
     background: rgba(100, 100, 100, 0.1); }

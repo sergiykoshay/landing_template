@@ -57,12 +57,7 @@ span.thin{
 
 //burger menu
 
-$dark: #292938;
-$light: #efefef;
-$white: #efefef;
-$black: #1a1b18;
-$color1: #3C91E6;
-$color2: #DE541E;
+
 
 
     .menu {
@@ -144,7 +139,7 @@ $color2: #DE541E;
 
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
 	.mainNav {
         overflow: hidden;
         background: rgba(100, 100, 100, .1);
